@@ -64,7 +64,7 @@ if auto_res == "True":
     _1080p = False
     _720p = False
     _480p = False
-    _360p = False
+    _360p = Falseself.thumbnail_size[0]
     _240p = False
     _144p = False
     if clip.size[1] >= 1080:
@@ -149,13 +149,14 @@ if thumb == "True":
         end_time = start_time + 2.5
     gif.append(final.subclip(start_time, end_time))
 
+    thumb_size = ast.literal_eval(thumb_size)
     final_gif = concatenate_videoclips(gif)
-    final_gif.resize(width=self.thumbnail_size[0],
-                    height=self.thumbnail_size[1]).\
+    final_gif.resize(width=thumb_size[0],
+                    height=thumb_size[1]).\
                     write_gif(clip_name + "_gif.gif", fps=8)
 
     # thumbnail
     final_thumbnail = clip.subclip(clip.duration / 2, clip.duration / 2)
-    final_thumbnail.resize(width=self.thumbnail_size[0],
-                          height=self.thumbnail_size[1]).\
-                          save_frame(clip_name + "_thumb.jpg")
+    final_thumbnail.resize(width=thumb_size[0],
+                          height=thumb_size[1]).\
+                          save_frame(clip_name + "_thumb.jpg"))
