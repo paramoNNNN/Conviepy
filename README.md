@@ -21,39 +21,39 @@ pip install pathlib
 
 * **path**
 
-_path to video_
+  _path to video_
 
-_example: path='/home/conviepy/video.mp4'_
+  _example: path='/home/conviepy/video.mp4'_
 
 * **auto_res**
 
-_Convert to different resolutions Automatically_
+  _Convert to different resolutions Automatically_
 
-_example: auto_res=True_
+  _example: auto_res=True_
 
 * **res**
 
-_if auto_res is False you can add your custom resolution_
+  _if auto_res is False you can add your custom resolution_
 
-_example: res=[300, 300]
+  _example: res=[300, 300]_
 
 * **thumb**
 
-_add preview gif and jpeg_
+  _add preview gif and jpeg_
 
-_example: thumb=True_
+  _example: thumb=True_
 
 * **thumb_size**
 
-_size of thumb if thumb is True_
+  _size of thumb if thumb is True_
 
-_example: thumb_size=[100,100]
+  _example: thumb_size=[100,100]_
 
 * **logo**
 
-_place logo in video_
+  _place logo in video_
 
-_example: logo=/home/conviepy/logo.png_
+  _example: logo=/home/conviepy/logo.png_
 
 ## Example
 ```
