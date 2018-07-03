@@ -64,7 +64,7 @@ if auto_res == "True":
     _1080p = False
     _720p = False
     _480p = False
-    _360p = Falseself.thumbnail_size[0]
+    _360p = False
     _240p = False
     _144p = False
     if clip.size[1] >= 1080:
